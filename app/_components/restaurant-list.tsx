@@ -1,5 +1,5 @@
 import { db } from "../_lib/prisma";
-import RestaurantItem from "./restaturantItem";
+import RestaurantItem from "./restaurant-item";
 
 const RestaurantList = async () => {
   // TODO pegar restaurantes c maior numero de pedidos
