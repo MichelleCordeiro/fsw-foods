@@ -9,7 +9,7 @@ const RecommendedREstaurants = async () => {
     <>
       <Header />
 
-      <div className="px-5 py-6">
+      <div className="px-5 pt-6">
         <h2 className="mb-6 text-lg font-semibold">
           Restaurantes Recomendados
         </h2>
