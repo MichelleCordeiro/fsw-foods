@@ -21,8 +21,9 @@ export interface CartProduct
 interface ICartContext {
   products: CartProduct[];
   subtotalPrice: number;
-  totalDiscounts: number;
   totalPrice: number;
+  totalDiscounts: number;
+
   addProductToCart: ({
     product,
     quantity,
@@ -48,8 +49,9 @@ interface ICartContext {
 export const CartContext = createContext<ICartContext>({
   products: [],
   subtotalPrice: 0,
-  totalDiscounts: 0,
   totalPrice: 0,
+  totalDiscounts: 0,
+
   addProductToCart: () => {},
   decreaseProductQuantity: () => {},
   increaseProductQuantity: () => {},
@@ -167,8 +169,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       value={{
         products,
         subtotalPrice,
-        totalDiscounts,
         totalPrice,
+        totalDiscounts,
         addProductToCart,
         decreaseProductQuantity,
         increaseProductQuantity,
